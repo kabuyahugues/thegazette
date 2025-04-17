@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+footer{
+    position: relative;
+    background-image: url('/14-ex/img/13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -200px;
+    padding: 5rem 0;
+    &::before{
+        @include filtreBlack();
+    }
+    .footer-top{
+        position: relative;
+        z-index: 2;
+        padding: 0 1rem;
+        @media screen and ( min-width: 768px ) { 
+            padding: 0rem 3rem;
+            .container{
+                width: 1140px;
+                margin: auto;
+            }
+        }
+    }
+    .footer-bottom{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: $blanc;
+        border-top: 1px solid $blanc;
+        padding: 1rem 1rem;
+
+    }
+    h4{
+        color: $blanc;
+    }
+}
