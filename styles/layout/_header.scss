@@ -33,6 +33,9 @@
             a{
                 font-weight: 600;
                 margin-right: 7px;
+                &:hover{
+                    color: $red;
+                }
             }
         }
     }
